@@ -1,0 +1,260 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vh;
+  padding: 4vh;
+  flex-wrap: wrap;
+  background-color: #e0a96d;
+}
+
+.contact .contact-info,
+.contactus,
+.contact .google-maps {
+  flex: 1; /* Her biri eşit genişlikte olacak */
+  min-width: 28vh;
+  max-width: 70vh; /* Genişlik sınırlarını belirlemek isterseniz */
+  padding: 2vh;
+  background-color: white;
+  border-radius: 1vh;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2vh; /* Alt boşluk eklenmiş */
+}
+
+.contact .contact-info {
+  height: 70vh;
+}
+
+.contactus {
+  height: 70vh;
+}
+
+.contact .google-maps {
+  height: 70vh;
+}
+
+.contact-logopart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.contact-logopart img {
+  width: 30vh;
+  height: auto;
+  margin-top: 10vh;
+}
+
+.contact .contact-info h2 {
+  margin-bottom: 2vh;
+  font-size: 3vh;
+  color: black;
+  border-bottom: 2px solid #e0a96d;
+  padding-bottom: 0.5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .contact-info p {
+  font-size: 2.5vh;
+  margin: 1.5vh 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  padding: 1.5vh;
+}
+
+.contact .contact-info p svg {
+  margin-right: 1vh;
+  font-size: 4vh;
+}
+
+.contactus h2 {
+  margin-bottom: 2vh;
+  font-size: 3vh;
+  color: black;
+  border-bottom: 2px solid #e0a96d;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  width: 100%;
+  padding: 1.5vh;
+  margin-bottom: 1vh;
+  border: 1px solid #ddd;
+  border-radius: 0.8vh;
+  font-size: 1.6vh;
+  color: #333;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .contact-form input:focus,
+.contact .contact-form textarea:focus {
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.contact .contact-form button {
+  background-color: #e0a96d;
+  color: white;
+  padding: 1.2vh 2.0vh;
+  border: none;
+  border-radius: 0.8vh;
+  font-size: 1.6vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact .contact-form button:hover {
+  background-color: #ddc3a5;
+  transform: scale(1.05);
+}
+
+.contact .google-maps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5vh;
+  height: 70vh;
+  width: auto;
+  background-color: white;
+  flex: 1;
+  border-radius: 1vh;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2vh;
+}
+
+.google-maps h2 {
+  display: flex;
+  font-size: 3vh;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2vh;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 2px solid #e0a96d;
+  padding-bottom: 0.5vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact .google-maps iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.message-txt{
+  height: 12vh;
+}
+@media (max-width: 768px) {
+  .contact .contact-info p {
+    font-size: 2.2vh !important;
+  }
+
+  .contact .contact-info h2 {
+    font-size: 3vh !important;
+  }
+
+  .contact .contact-info p svg {
+    margin-left: -2vh;
+    font-size: 3vh !important;
+  }
+
+  .google-maps-h2 {
+    font-size: 3vh !important;
+  }
+
+  .contact .contact-logopart img {
+    width: 20vh;
+    display: flex;
+    height: auto;
+  }
+
+  .contact.contact-info .contact-logopart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact {
+    flex-direction: column;
+    background-attachment: fixed;
+    gap: 2vh;
+    padding: 2vh;
+  }
+
+  .contact .contact-info,
+  .contact .google-maps {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  .contact .google-maps iframe {
+    height: 30vh;
+  }
+
+  .contact .contact-form h2 {
+    font-size: 3vh;
+  }
+
+  .contact .contact-form input {
+    font-size: 0.8rem;
+  }
+
+  .contact .contact-form textarea {
+    font-size: 0.8rem;
+  }
+
+  .contact .contact-form button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .contact .contact-info p {
+    font-size: 1.5vh;
+  }
+
+  .contact .contact-info p svg {
+    margin-right: 0.7vh;
+    font-size: 2vh;
+  }
+
+  .google-maps h2 {
+    font-size: 2vh;
+  }
+
+  .contact {
+    flex-direction: column;
+    background-attachment: fixed;
+    align-items: stretch;
+    gap: 2vh;
+    padding: 2vh;
+  }
+
+  .contact .contact-info,
+  .contact .contact-form,
+  .contact .google-maps {
+    width: 100%;
+    margin-bottom: 2vh;
+    min-width: 0;
+  }
+
+  .contact .google-maps iframe {
+    height: 35vh;
+  }
+
+  .contact .contact-form button {
+    width: 100%;
+  }
+}

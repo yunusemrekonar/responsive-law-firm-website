@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.home {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    background-image: url("../assets/law-background2.jpg"); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+.home h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vh; 
+    color: #333; 
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .home {
+        background-image: url("../assets/mobil-background.png"); 
+        background-size: cover;
+    }
+
+    .home h2 {
+        font-size: 2vh; 
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        height: 60vh; 
+        background-image: url("../assets/mobil-background.png"); 
+        padding: 7vw; 
+    }
+
+    .home h2 {
+        font-size: 2vh; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .home {
+        height: 100vh;
+        position: relative;
+        background-position: relative;
+        background-image: url("../assets/mobil-background.png");
+        background-size: cover;
+        width: auto;
+        
+    }
+
+    .home h2 {
+        font-size: 2vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home {
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+        width: auto;
+    }
+
+    .home h2 {
+        font-size: 2vh;
+    }
+}

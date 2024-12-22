@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: konarhukuk
+    env: node
+    buildCommand: "npm run build"
+    startCommand: "serve -s build"
+    staticPublishPath: "/build"
+    routes:
+      - src: "/**"
+        dest: "/index.html"

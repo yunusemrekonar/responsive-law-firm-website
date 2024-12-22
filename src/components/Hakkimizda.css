@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #ecf0f1;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  #ankara-avukat-hakkimizda {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .teamSection {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    background-color: #fafafa;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .teamSection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .teamMember {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .team-member-pg-name{
+    background-color: transparent;
+  }
+  .teamMember:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .teamMember img {
+    width: 20vh;
+    height: auto;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .teamMember h3 {
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .teamMember p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  .aboutText {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aboutText h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    border-bottom: 2px solid #e0a96d;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .aboutText p {
+    font-size: 1.125rem;
+    color: black;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  #ankara-avukat-hakkimizda {
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+    border-radius: 10px;
+  }
+  
+  #ankara-avukat-hakkimizda::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+  }
+  
+  meta {
+    font-size: 1rem;
+  }
+  
+  .teamSection, .aboutText {
+    transition: all 1s ease-out;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      padding: 20px;
+    }
+  
+    .teamSection, .aboutText {
+      text-align: center;
+    }
+  
+    .teamMember {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .teamMember img {
+      width: 20vh;
+      height: auto;
+    }
+  
+    .teamMember h3 {
+      font-size: 1.5rem;
+    }
+  
+    .aboutText h2 {
+      font-size: 2rem;
+    }
+  
+    .aboutText p {
+      font-size: 1rem;
+    }
+  }
+  
+  h2, h3 {
+    color: #2c3e50;
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-weight: normal;
+  }
+  
